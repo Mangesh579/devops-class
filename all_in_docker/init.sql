@@ -9,16 +9,16 @@ CREATE TABLE IF NOT EXISTS employees(
     position VARCHAR(50), 
     wage FLOAT NOT NULL
 );
-CREATE USER 'test'@'localhost' IDENTIFIED BY 'mauFJcuf5dhRMQrjj';
-GRANT ALL PRIVILEGES ON employeeSystem.* TO 'test'@'localhost';
+CREATE USER 'testing'@'localhost' IDENTIFIED BY 'mauFJcuf5dhRMQrjj';
+GRANT ALL PRIVILEGES ON employeeSystem.* TO 'testing'@'localhost';
 
 -- Create the user and grant privileges for any IP
-CREATE USER 'test'@'%' IDENTIFIED BY 'mauFJcuf5dhRMQrjj';
-GRANT ALL PRIVILEGES ON employeeSystem.* TO 'test'@'%';
+CREATE USER 'testing'@'%' IDENTIFIED BY 'mauFJcuf5dhRMQrjj';
+GRANT ALL PRIVILEGES ON employeeSystem.* TO 'testing'@'%';
 
 FLUSH PRIVILEGES;
 
-ALTER USER 'test'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY 'mauFJcuf5dhRMQrjj';
-ALTER USER 'test'@'%' IDENTIFIED WITH 'mysql_native_password' BY 'mauFJcuf5dhRMQrjj';
+ALTER USER 'testing'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY 'mauFJcuf5dhRMQrjj';
+ALTER USER 'testing'@'%' IDENTIFIED WITH 'mysql_native_password' BY 'mauFJcuf5dhRMQrjj';
 FLUSH PRIVILEGES;
 
