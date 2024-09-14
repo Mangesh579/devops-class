@@ -9,7 +9,7 @@ app.use(cors({
 
 const db = mysql.createPool({
   port: 3306,
-  host: "12b6495f11e8",
+  host: "localhost",
   user: "root",
   password: "mauFJcuf5dhRMQrjj",
   database: "employeeSystem",
