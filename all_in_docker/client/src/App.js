@@ -15,7 +15,7 @@ function App() {
 
   const addEmployee = () => {
     console.log(process.env.REACT_APP_API_URL)
-    Axios.post(process.env.REACT_APP_API_URL+"/create", {
+    Axios.post(process.env.54.242.136.242+"/create", {
       name: name,
       age: age,
       country: country,
